@@ -5,30 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Speedometer HUD</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="container">
-        <!-- Speedometer -->
         <div class="speedometer">
             <div class="speed-display">
                 <span id="speed">187</span> <span class="unit">km/h</span>
             </div>
         </div>
-
-        <!-- Icons Section (Above the fuel bar) -->
         <div class="icon-container">
-            <img id="engine-icon" src="img/engineoff.png" alt="Engine Icon">
             <img id="lock-icon" src="img/locked.png" alt="Lock Icon">
+            <img id="engine-icon" src="img/engineoff.png" alt="Engine Icon">
         </div>
-
-        <!-- Fuel Bar Section -->
         <div class="fuel-section">
-            <img id="fuel-icon" src="img/gas.png" alt="Fuel Icon"> <!-- Fuel icon -->
+            <img id="fuel-icon" src="img/gas.png" alt="Fuel Icon">
             <div class="fuel-bar">
                 <div class="fuel-bar-fill"></div>
             </div>
         </div>
     </div>
-    <script src="checking.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
