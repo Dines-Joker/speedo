@@ -1,0 +1,94 @@
+﻿/* General Styles */
+body { /* Set background image */
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(63, 63, 63);
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Container */
+#container {
+    position: absolute;
+    bottom: 5%; /* Adjusted to bottom right corner */
+    right: 5%;
+    width: 250px; /* Slightly increased for better layout */
+    height: auto;
+    text-align: right;
+    background: rgba(0, 0, 0, 0.3); /* Transparent background */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8); /* Shadow effect */
+}
+
+/* Speedometer */
+.speedometer {
+    margin-bottom: 5px;
+    margin-right: 29px;
+}
+
+.speed-display {
+    font-size: 36px; /* Smaller for compact design */
+    color: #FF0000; /* Bright red for speed */
+    font-weight: 700;
+    margin-right: -10px;
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7); /* Glowing effect */
+}
+
+.speed-display .unit {
+    font-size: 18px;
+    color: #B0B0B0;
+    margin-left: 5px;
+    text-align: right;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+/* Icons (Above the fuel bar, aligned to the right) */
+.icon-container {
+    display: flex;
+    justify-content: flex-end; /* Align icons to the right */
+    margin-top: 5px;
+}
+
+.icon-container img {
+    width: 20px;
+    height: auto;
+    margin-left: 10px; /* Glowing effect */
+}
+
+/* Fuel Section */
+.fuel-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#fuel-icon {
+    width: auto; /* Fuel icon size */
+    height: 25px;
+    margin-right: 10px;
+    filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.7)); /* Glowing effect for icons */
+}
+
+/* Cooler Fuel Bar */
+.fuel-bar {
+    position: relative;
+    width: 100%;
+    height: 15px; /* Slightly larger height for better visibility */
+    background: #ffffff1a; /* Semi-transparent background */
+    border-radius: 1%;
+    overflow: hidden;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Inner shadow for 3D effect */
+    border: 0px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+     /* Outer glowing effect */
+}
+
+.fuel-bar-fill {
+    height: 100%;
+    width: 45%; /* Dynamically updated */
+    background:#FF0000; /* Smooth gradient from green to red */
+    border-radius: 5px 0 0 5px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.8), inset 0 0 5px rgba(0, 0, 0, 0.5); /* Outer and inner glowing effect */
+}

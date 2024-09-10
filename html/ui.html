@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speedometer HUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <!-- Speedometer -->
+        <div class="speedometer">
+            <div class="speed-display">
+                <span id="speed">187</span> <span class="unit">km/h</span>
+            </div>
+        </div>
+
+        <!-- Icons Section (Above the fuel bar) -->
+        <div class="icon-container">
+            <img id="engine-icon" src="img/engineoff.png" alt="Engine Icon">
+            <img id="lock-icon" src="img/locked.png" alt="Lock Icon">
+        </div>
+
+        <!-- Fuel Bar Section -->
+        <div class="fuel-section">
+            <img id="fuel-icon" src="img/gas.png" alt="Fuel Icon"> <!-- Fuel icon -->
+            <div class="fuel-bar">
+                <div class="fuel-bar-fill"></div>
+            </div>
+        </div>
+    </div>
+    <script src="checking.js"></script>
+</body>
+</html>
